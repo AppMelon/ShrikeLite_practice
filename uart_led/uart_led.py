@@ -3,7 +3,7 @@ import shrike
 import time
 
 shrike.reset()
-shrike.flash("uart_led	.bin")
+shrike.flash("uart_led.bin")
 # Initialize UART0 (TX=GPIO0, RX=GPIO1)
 uart = UART(0, baudrate=115200, tx=Pin(0), rx=Pin(1))
 
